@@ -11,6 +11,9 @@ all:
 	@betty-style *.h
 	@betty-doc  *.h 1> /dev/null
 
+betty:
+	@betty-style *.c *.h
+	@betty-doc  *.c *.h 1> /dev/null
 
 0: SRC=tests/0-main.c 0-binary_tree_node.c tests/binary_tree_print.c
 %: SRC=tests/$*-main.c $*-*.c 0-*.c tests/binary_tree_print.c
