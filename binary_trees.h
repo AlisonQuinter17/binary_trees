@@ -2,8 +2,9 @@
 #define _BINARY_TREES_H_
 
 /* Libraries */
-#include <stddef.h>
-#include <stdio.h>
+#include <stddef.h>	/* NULL */
+#include <stdio.h>	/* printf */
+#include <stdlib.h>	/* free, malloc */
 
 /**
  * struct binary_tree_s - Binary tree node
