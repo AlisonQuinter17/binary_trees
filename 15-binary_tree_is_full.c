@@ -7,7 +7,9 @@
  */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
-		/* !xor: iguales(1), diferentes(0) */
+		/* 		xor (^): iguales(0), diferentes(1) */
+		/* not 	xor (^): iguales(1), diferentes(0) */
+		/* tree is doing an internar if inside the parenthesis */
 		return
 		(
 			tree &&
