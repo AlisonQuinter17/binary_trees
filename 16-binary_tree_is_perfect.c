@@ -50,11 +50,10 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int balance, left = 0, right = 0;
 
-	balance = binary_tree_balance(tree);
-
 	if (!tree)
 		return (0);
 
+	balance = binary_tree_balance(tree);
 	if (balance == 0)
 	{
 		left = binary_tree_is_perfect(tree->left);
@@ -62,6 +61,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 		if (left == 0 && right == 0)
 			return (1);
+		return (0);
 	}
 	return (0);
 }
